@@ -1,0 +1,104 @@
+.intro-container {
+  padding: 5rem 10rem;
+  h1 {
+    color: $white-color;
+    font-size: 5rem;
+    font-family: $font-prata;
+    font-weight: lighter;
+  }
+
+  p {
+    color: $text-color;
+  }
+}
+
+.companies {
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects {
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .project {
+    flex: 1 0 50%;
+    h3 {
+      color: $white-color;
+      font-family: $font-prata;
+      font-size: 2rem;
+      font-weight: lighter;
+      margin: 1rem 0rem;
+    }
+
+    p {
+      color: $text-color;
+    }
+  }
+}
+
+.community {
+  padding: 5rem 10rem;
+  background-color: hsl(228, 10%, 20%);
+  display: grid;
+  column-gap: 25px;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+
+  .para-left {
+    flex: 1 0 50%;
+    h3 {
+      font-family: $font-prata;
+      font-size: 3rem;
+      font-weight: lighter;
+      color: $white-color;
+    }
+
+    p {
+      color: $text-color;
+      margin: 1rem 0rem;
+    }
+  }
+
+  .para-right {
+    flex: 1 0 50%;
+
+    p {
+      color: $text-color;
+    }
+  }
+}
+
+.interested {
+  padding: 5rem 10rem;
+
+  h3 {
+    color: $white-color;
+    font-size: 3rem;
+    font-family: $font-prata;
+    font-weight: lighter;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    background: $yellow-color;
+    border: none;
+    font-family: $font-prata;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    margin: 1rem 0rem;
+
+    &:hover {
+      background-color: $white-color;
+    }
+  }
+}

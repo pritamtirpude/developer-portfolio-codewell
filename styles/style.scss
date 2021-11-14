@@ -1,0 +1,88 @@
+@import "global";
+@import "nav";
+@import "intro";
+@import "footer";
+
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 5rem 2rem;
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 10%);
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .nav-links.open {
+    transform: translateX(0%);
+  }
+
+  .get-in-touch {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .intro-container {
+    padding: 5rem 2rem;
+    br {
+      display: none;
+    }
+  }
+
+  .companies {
+    padding: 5rem 2rem;
+    justify-content: space-evenly;
+    align-self: center;
+    img {
+      margin: 2rem 0rem;
+    }
+  }
+
+  .projects {
+    padding: 5rem 2rem;
+    flex-direction: column;
+
+    .project.project-margin {
+      margin: 2rem 0rem;
+    }
+  }
+
+  .community {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .para-right {
+      margin: 4rem 0rem;
+    }
+  }
+
+  .interested {
+    padding: 5rem 2rem;
+
+    br {
+      display: none;
+    }
+  }
+
+  footer {
+    padding: 3rem 2rem;
+  }
+}

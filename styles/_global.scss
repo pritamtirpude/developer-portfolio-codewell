@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font-prata: "Prata", serif;
+$font-inter: "Inter", sans-serif;
+$white-color: hsl(0, 0%, 100%);
+$yellow-color: hsl(53, 96%, 65%);
+$text-color: hsl(0, 0%, 59%);
+
+html {
+  font-size: 62.5%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  font-size: 1.6rem;
+  font-family: $font-inter;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}

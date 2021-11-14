@@ -1,0 +1,79 @@
+.main-header {
+  padding: 5rem 10rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  a {
+    font-size: 2rem;
+    color: $white-color;
+    font-family: $font-prata;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+
+  a {
+    color: $text-color;
+    transition: color 0.4s ease;
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}
+
+.get-in-touch {
+  button {
+    padding: 1rem 2rem;
+    background: $yellow-color;
+    border: none;
+    font-family: $font-prata;
+    cursor: pointer;
+    transition: background 0.4s ease;
+
+    &:hover {
+      background-color: $white-color;
+    }
+  }
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: $white-color;
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}

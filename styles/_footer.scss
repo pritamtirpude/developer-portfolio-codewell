@@ -1,0 +1,29 @@
+footer {
+  padding: 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(228, 10%, 20%);
+
+  .footer-logo {
+    a {
+      font-size: 2rem;
+      color: $white-color;
+      font-family: $font-prata;
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: $yellow-color;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin: 0rem 1rem;
+    }
+  }
+}
